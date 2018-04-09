@@ -9597,6 +9597,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <part name="S3" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="FLASH"/>
 <part name="J5" library="SparkFun-Connectors" deviceset="POWER_JACK" device="SLT"/>
 <part name="IC1" library="burr-brown" library_urn="urn:adsk.eagle:library:111" deviceset="REG1117" device="" package3d_urn="urn:adsk.eagle:package:4940/1"/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9641,6 +9642,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <instance part="S3" gate="G$1" x="17.78" y="17.78"/>
 <instance part="J5" gate="G$1" x="116.84" y="-33.02"/>
 <instance part="IC1" gate="G$1" x="116.84" y="-48.26"/>
+<instance part="GND11" gate="1" x="111.76" y="-10.16"/>
 </instances>
 <busses>
 </busses>
@@ -9886,14 +9888,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="38.1" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="8"/>
-<label x="109.22" y="-10.16" size="1.778" layer="95"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-5.08" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-7.62" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="15.24" y1="-35.56" x2="15.24" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="GND"/>
@@ -9919,6 +9913,10 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="119.38" y1="-30.48" x2="119.38" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="119.38" y="-30.48"/>
 <junction x="119.38" y="-27.94"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="8"/>
+<pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10005,6 +10003,13 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pinref part="J3" gate="G$1" pin="VBUS"/>
 <wire x1="17.78" y1="-22.86" x2="22.86" y2="-22.86" width="0.1524" layer="91"/>
 <label x="17.78" y="-22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="-5.08" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-2.54" x2="109.22" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -161,8 +161,8 @@
 <wire x1="20.6375" y1="20.5105" x2="55.6895" y2="20.5105" width="0.1524" layer="20"/>
 <wire x1="55.6895" y1="20.5105" x2="55.6895" y2="44.7675" width="0.1524" layer="20"/>
 <wire x1="55.6895" y1="44.7675" x2="20.6375" y2="44.7675" width="0.1524" layer="20"/>
-<hole x="24.003" y="42.6085" drill="1"/>
-<hole x="24.003" y="21.717" drill="1"/>
+<hole x="24.003" y="42.672" drill="1.6"/>
+<hole x="22.0345" y="21.971" drill="1.6"/>
 <text x="33.0835" y="26.3525" size="1.016" layer="21">WaggleNode</text>
 <text x="35.814" y="23.4315" size="0.7112" layer="21">v0.4 Beta</text>
 <text x="33.02" y="24.4475" size="0.6096" layer="21">Jimmy He, Chris Schmitz

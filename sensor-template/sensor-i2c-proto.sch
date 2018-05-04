@@ -11687,9 +11687,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="132.08" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DEBUG" gate="A" pin="4"/>
-<wire x1="177.8" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
-<label x="177.8" y="12.7" size="1.778" layer="95" rot="R180"/>
+<pinref part="DEBUG" gate="A" pin="3"/>
+<wire x1="195.58" y1="12.7" x2="190.5" y2="12.7" width="0.1524" layer="91"/>
+<label x="195.58" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX0" class="0">
@@ -11699,9 +11699,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="132.08" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DEBUG" gate="A" pin="3"/>
-<wire x1="195.58" y1="12.7" x2="190.5" y2="12.7" width="0.1524" layer="91"/>
-<label x="195.58" y="12.7" size="1.778" layer="95"/>
+<pinref part="DEBUG" gate="A" pin="4"/>
+<wire x1="177.8" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
+<label x="177.8" y="12.7" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$1" class="0">

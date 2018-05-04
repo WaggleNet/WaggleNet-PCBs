@@ -10756,9 +10756,9 @@ Source: www.kingbright.com</description>
 <label x="132.08" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DEBUG" gate="A" pin="4"/>
-<wire x1="177.8" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
-<label x="177.8" y="12.7" size="1.778" layer="95" rot="R180"/>
+<pinref part="DEBUG" gate="A" pin="3"/>
+<wire x1="195.58" y1="12.7" x2="190.5" y2="12.7" width="0.1524" layer="91"/>
+<label x="195.58" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX0" class="0">
@@ -10768,9 +10768,9 @@ Source: www.kingbright.com</description>
 <label x="132.08" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DEBUG" gate="A" pin="3"/>
-<wire x1="195.58" y1="12.7" x2="190.5" y2="12.7" width="0.1524" layer="91"/>
-<label x="195.58" y="12.7" size="1.778" layer="95"/>
+<pinref part="DEBUG" gate="A" pin="4"/>
+<wire x1="177.8" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
+<label x="177.8" y="12.7" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12869,17 +12869,19 @@ design rules under a new name.</description>
 </signal>
 <signal name="RX0">
 <contactref element="U2" pad="30"/>
-<contactref element="DEBUG" pad="4"/>
-<wire x1="13.8982" y1="15.4497" x2="16.474790625" y2="15.4497" width="0.1524" layer="16"/>
-<wire x1="16.474790625" y1="15.4497" x2="16.65439375" y2="15.52409375" width="0.1524" layer="16" curve="44.999502"/>
-<wire x1="16.65439375" y1="15.52409375" x2="17.0053" y2="15.875" width="0.1524" layer="16"/>
+<contactref element="DEBUG" pad="3"/>
+<wire x1="19.12" y1="15.4497" x2="19.5453" y2="15.875" width="0.1524" layer="16"/>
+<wire x1="16.594975" y1="16.8656" x2="17.415625" y2="16.8656" width="0.1524" layer="16"/>
+<wire x1="13.8982" y1="15.4497" x2="15.179075" y2="15.4497" width="0.1524" layer="16"/>
+<wire x1="18.831525" y1="15.4497" x2="19.12" y2="15.4497" width="0.1524" layer="16"/>
+<wire x1="15.179075" y1="15.4497" x2="16.594975" y2="16.8656" width="0.1524" layer="16"/>
+<wire x1="17.415625" y1="16.8656" x2="18.831525" y2="15.4497" width="0.1524" layer="16"/>
 </signal>
 <signal name="TX0">
 <contactref element="U2" pad="31"/>
-<contactref element="DEBUG" pad="3"/>
-<wire x1="13.8982" y1="14.6497" x2="18.214790625" y2="14.6497" width="0.1524" layer="16"/>
-<wire x1="18.214790625" y1="14.6497" x2="18.39439375" y2="14.72409375" width="0.1524" layer="16" curve="44.999502"/>
-<wire x1="18.39439375" y1="14.72409375" x2="19.5453" y2="15.875" width="0.1524" layer="16"/>
+<contactref element="DEBUG" pad="4"/>
+<wire x1="13.8982" y1="14.6497" x2="15.78" y2="14.6497" width="0.1524" layer="16"/>
+<wire x1="15.78" y1="14.6497" x2="17.0053" y2="15.875" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U2" pad="1"/>

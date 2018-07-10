@@ -10768,6 +10768,11 @@ Source: www.kingbright.com</description>
 <wire x1="55.88" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <label x="68.58" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IRQ"/>
+<wire x1="208.28" y1="-22.86" x2="203.2" y2="-22.86" width="0.1524" layer="91"/>
+<label x="208.28" y="-22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D3" class="0">
 <segment>
@@ -10981,13 +10986,6 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="G$1" pin="PROG"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="IRQ" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="IRQ"/>
-<wire x1="208.28" y1="-22.86" x2="203.2" y2="-22.86" width="0.1524" layer="91"/>
-<label x="208.28" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

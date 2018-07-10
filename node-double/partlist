@@ -1,0 +1,43 @@
+Partlist
+
+Exported from node-double.brd at 25/04/2018 22:55
+
+EAGLE Version 9.0.0 Copyright (c) 1988-2018 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value           Package   Library                     Position (mil)        Orientation
+
+C1       0.1u            C0603     resistor                    (1440 1677.5)         R180
+C2       10u             C0603     resistor                    (1737.5 1312.5)       R180
+C3       10u             C0603     resistor                    (2057.5 1215)         R270
+C4       10u             C0603     resistor                    (1957.5 1025)         R0
+C5       10u             C0603     resistor                    (1625 1105)           R180
+C6       0.1u            C0603     resistor                    (1625 1187.5)         R180
+C7       10u             C0603     resistor                    (1560 1677.5)         R0
+C8       47u             C0603     resistor                    (1025 1105)           R270
+C9       100n            C0603     resistor                    (1680 1677.5)         R0
+C10      100n            C0603     resistor                    (942.5 1105)          R270
+IC1      TP4056          SOP-8     TP4056                      (1950 1375)           R0
+IC3      24C02           SO-08     microchip                   (1185 1127.5)         R0
+J_BATT                   B2B-PH-K  con-jst-ph                  (1962.5 930)          MR0
+J_SOLAR                  B2B-PH-K  con-jst-ph                  (1665 930)            MR0
+LED1                     SML0805   led                         (892.5 1225)          MR90
+LED2                     SML0805   led                         (892.5 1510)          MR90
+R1       10K             R0603     resistor                    (1270 1622.5)         R270
+R2       1K              R0603     resistor                    (892.5 1097.5)        MR270
+R3       1K              R0603     resistor                    (892.5 1382.5)        MR270
+R4       10K             R0603     resistor                    (1730 1212.5)         R270
+R5       10K             R0603     resistor                    (1822.5 1212.5)       R270
+R6       2K              R0603     resistor                    (1765 1420)           R270
+R8       470k            R0603     resistor                    (1812.5 1575)         R90
+R10      100k            R0603     resistor                    (1900 1575)           R90
+R11      100k            R0603     resistor                    (2075 1575)           R90
+R12      470k            R0603     resistor                    (1987.5 1575)         R90
+R14      4.7K            R0603     resistor                    (942.5 972.5)         R90
+R15      4.7K            R0603     resistor                    (1025 972.5)          R90
+SENSOR   B4B-PH-K        B4B-PH-K  con-jst-ph                  (1247.5 932.5)        MR0
+U$1      ML01SSMD-SOM    ML01S     ebyte                       (917.5 1185)          MR180
+U$2                      2X04      pinhead                     (1142.5 1475)         R270
+U1       ATMEGA328P_TQFP TQFP32-08 SparkFun-IC-Microcontroller (1450 1425)           R90
+U2       3.3V/150mA      SOT23-5   SparkFun-IC-Power           (1777.5 1052.5)       R0

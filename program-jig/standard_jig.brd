@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -165,7 +165,7 @@
 <dimension x1="19.9825" y1="17.145" x2="19.9825" y2="82.22" x3="26.3525" y3="49.6825" textsize="0.9144" textratio="5" layer="51"/>
 <dimension x1="19.9825" y1="82.22" x2="0.1905" y2="82.22" x3="10.0865" y3="86.0425" textsize="0.9144" textratio="5" layer="51"/>
 <text x="18.415" y="50.165" size="1.1176" layer="28" font="vector" ratio="5" rot="MR270">WaggleNet Pogo Jig</text>
-<text x="16.51" y="41.91" size="0.8128" layer="28" font="vector" ratio="5" rot="MR270">Version 0.5</text>
+<text x="16.51" y="41.91" size="0.8128" layer="28" font="vector" ratio="5" rot="MR270">Version 1.0</text>
 <text x="18.415" y="80.01" size="0.9144" layer="28" font="vector" ratio="5" rot="MR270">(c) Jimmy He, Sunmola Orealuwa
 University of Illinois at Urbana-Champaign</text>
 </plain>
@@ -672,6 +672,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -912,6 +915,19 @@ design rules under a new name.</description>
 <wire x1="10.0584" y1="58.5216" x2="10.0584" y2="42.672" width="0.1524" layer="1"/>
 <wire x1="8.89" y1="59.69" x2="10.0584" y2="58.5216" width="0.1524" layer="1"/>
 <wire x1="8.9916" y1="40.6908" x2="8.89" y2="40.64" width="0.1524" layer="1"/>
+<contactref element="J3" pad="1"/>
+<wire x1="9.4488" y1="78.6384" x2="8.9916" y2="78.1812" width="0.1524" layer="16"/>
+<wire x1="9.4488" y1="78.7908" x2="9.4488" y2="78.6384" width="0.1524" layer="16"/>
+<wire x1="10.3632" y1="79.7052" x2="9.4488" y2="78.7908" width="0.1524" layer="16"/>
+<wire x1="12.0396" y1="79.7052" x2="10.3632" y2="79.7052" width="0.1524" layer="16"/>
+<wire x1="13.716" y1="78.0288" x2="12.0396" y2="79.7052" width="0.1524" layer="16"/>
+<wire x1="13.716" y1="66.7512" x2="13.716" y2="78.0288" width="0.1524" layer="16"/>
+<wire x1="10.0584" y1="63.0936" x2="13.716" y2="66.7512" width="0.1524" layer="16"/>
+<wire x1="10.0584" y1="61.2648" x2="10.0584" y2="63.0936" width="0.1524" layer="16"/>
+<wire x1="8.9916" y1="60.198" x2="10.0584" y2="61.2648" width="0.1524" layer="16"/>
+<wire x1="8.9916" y1="59.7408" x2="8.9916" y2="60.198" width="0.1524" layer="16"/>
+<wire x1="8.9916" y1="78.1812" x2="8.89" y2="78.105" width="0.1524" layer="16"/>
+<wire x1="8.9916" y1="59.7408" x2="8.89" y2="59.69" width="0.1524" layer="16"/>
 </signal>
 <signal name="RST">
 <contactref element="J2" pad="5"/>
@@ -1006,9 +1022,6 @@ design rules under a new name.</description>
 <wire x1="8.9916" y1="72.9996" x2="10.0584" y2="71.9328" width="0.1524" layer="1"/>
 <wire x1="8.9916" y1="72.9996" x2="8.89" y2="73.025" width="0.1524" layer="1"/>
 </signal>
-<signal name="CSK">
-<contactref element="J3" pad="1"/>
-</signal>
 <signal name="N$1">
 <contactref element="D1" pad="C"/>
 <contactref element="R1" pad="2"/>
@@ -1038,6 +1051,13 @@ design rules under a new name.</description>
 <wire x1="8.9916" y1="21.0312" x2="8.9535" y2="21.1455" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>

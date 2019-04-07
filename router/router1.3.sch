@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -8943,7 +8943,7 @@ For reference (or to suit your programming needs) check out these designs:
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="S3" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="FLASH"/>
+<part name="S3" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="USER"/>
 <part name="IC1" library="burr-brown" library_urn="urn:adsk.eagle:library:111" deviceset="REG1117" device="" package3d_urn="urn:adsk.eagle:package:4940/1"/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1" value="10K"/>
@@ -9216,18 +9216,18 @@ For reference (or to suit your programming needs) check out these designs:
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="0" x2="27.94" y2="0" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="0" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="0" width="0.1524" layer="91"/>
-<junction x="27.94" y="0"/>
 <pinref part="S3" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="17.78" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="10.16" x2="27.94" y2="0" width="0.1524" layer="91"/>
 <junction x="27.94" y="10.16"/>
+<junction x="27.94" y="0"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>

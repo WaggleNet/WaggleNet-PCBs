@@ -1904,7 +1904,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.3985" y="-23.8125" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-left"/>
 </element>
 <element name="J4" library="SparkFun-Connectors" package="FTDI_BASIC" value="6_PIN_SERIAL_CABLEPTH" x="49.2125" y="-22.225" rot="MR0"/>
-<element name="S3" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_6.0MM" value="FLASH" x="-10.795" y="-16.8275" rot="MR270">
+<element name="S3" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_6.0MM" value="USER" x="-10.795" y="-16.8275" rot="MR270">
 <attribute name="PROD_ID" value=" SWCH-08441" x="-10.795" y="-16.8275" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SF_SKU" value="COM-00097" x="-10.795" y="-16.8275" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
@@ -1979,7 +1979,6 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="S2" pad="3"/>
-<contactref element="S1" pad="3"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="J1" pad="1"/>
@@ -1991,7 +1990,6 @@ design rules under a new name.</description>
 <vertex x="53.975" y="16.51"/>
 </polygon>
 <contactref element="J4" pad="GND"/>
-<contactref element="S3" pad="3"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="J2" pad="8"/>
 <contactref element="R6" pad="1"/>
@@ -2003,7 +2001,6 @@ design rules under a new name.</description>
 <wire x1="21.3671875" y1="-11.3665" x2="21.6281" y2="-11.1055875" width="0.1524" layer="1"/>
 <wire x1="21.6281" y1="-11.1055875" x2="21.6281" y2="-3.8354" width="0.1524" layer="1"/>
 <wire x1="35.8775" y1="7.115" x2="41.5925" y2="7.115" width="0.1524" layer="1"/>
-<wire x1="-8.5344" y1="5.1562" x2="-8.5344" y2="7.59323125" width="0.1524" layer="16"/>
 <wire x1="-7.7216" y1="10.0584" x2="-6.35" y2="11.43" width="0.1524" layer="16"/>
 <wire x1="-8.5344" y1="7.59323125" x2="-7.7216" y2="8.40603125" width="0.1524" layer="16"/>
 <wire x1="-7.7216" y1="8.40603125" x2="-7.7216" y2="10.0584" width="0.1524" layer="16"/>
@@ -2039,6 +2036,11 @@ design rules under a new name.</description>
 <wire x1="24.4475" y1="7.115" x2="25.5875" y2="7.115" width="0.1524" layer="1"/>
 <wire x1="26.67" y1="6.0325" x2="26.67" y2="5.715" width="0.1524" layer="1"/>
 <wire x1="25.5875" y1="7.115" x2="26.67" y2="6.0325" width="0.1524" layer="1"/>
+<contactref element="S1" pad="3"/>
+<contactref element="S3" pad="3"/>
+<wire x1="-8.5344" y1="-4.0513" x2="-8.5344" y2="-13.5763" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.5344" y1="5.1562" x2="-8.5344" y2="-4.0513" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.5344" y1="7.59323125" x2="-8.5344" y2="5.1562" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="RST">
 <contactref element="X1" pad="1"/>

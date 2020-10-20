@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="2.5" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="2.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -171,11 +171,13 @@
 <wire x1="53.4645625" y1="44.7675" x2="22.68521875" y2="44.7675" width="0.1524" layer="20"/>
 <wire x1="22.68521875" y1="44.7675" x2="20.6375" y2="42.71978125" width="0.1524" layer="20" curve="90"/>
 <text x="45.212" y="41.4655" size="1.016" layer="21">WaggleNode</text>
-<text x="45.212" y="38.4175" size="0.7112" layer="21">v0.8 Beta</text>
+<text x="45.212" y="38.4175" size="0.7112" layer="21">v1.0 Beta</text>
 <text x="45.212" y="39.4335" size="0.6096" layer="21">Jimmy He, Chris Schmitz
 University of Illinois</text>
 <dimension x1="20.6375" y1="42.71978125" x2="55.6895" y2="42.5425625" x3="38.18271875" y3="46.432596875" textsize="1.778" layer="51"/>
 <dimension x1="22.68521875" y1="44.7675" x2="22.95470625" y2="20.5105" x3="16.529840625" y3="32.56911875" textsize="1.778" layer="51"/>
+<circle x="52.07" y="36.83" radius="1.27" width="0.1524" layer="20"/>
+<circle x="24.13" y="24.13" radius="1.27" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="TP4056">
@@ -1879,17 +1881,15 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="0.1u" x="36.322" y="42.545" smashed="yes" rot="R180">
+<element name="C1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="0.1u" x="36.322" y="42.545" rot="R180">
 <attribute name="MF" value="YAGEO (PHYCOMP)" x="36.322" y="42.545" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="CC0603KRX7R7BB104" x="36.322" y="42.545" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="432210" x="36.322" y="42.545" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="37.4015" y="44.2595" size="0.9144" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100n" x="29.591" y="32.7025" smashed="yes" rot="R270">
+<element name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100n" x="29.591" y="32.7025" rot="R270">
 <attribute name="MF" value="AVX" x="29.591" y="32.7025" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="29.591" y="32.7025" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="29.591" y="32.7025" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="27.7495" y="34.036" size="0.9144" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C2" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="10u" x="39.4335" y="24.3205" smashed="yes" rot="R270">
 <attribute name="MF" value="AVX" x="39.4335" y="24.3205" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1903,63 +1903,54 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1301818" x="46.4185" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="45.466" y="20.828" size="0.9144" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="C5" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="10u" x="38.2905" y="30.2895" smashed="yes" rot="MR0">
+<element name="C5" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="10u" x="38.2905" y="30.2895" rot="MR0">
 <attribute name="MF" value="AVX" x="38.2905" y="30.2895" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="38.2905" y="30.2895" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="38.2905" y="30.2895" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="36.576" y="29.718" size="0.9144" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="C7" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="10u" x="41.2115" y="41.9735" smashed="yes">
+<element name="C7" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="10u" x="41.2115" y="41.9735">
 <attribute name="MF" value="AVX" x="41.2115" y="41.9735" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="41.2115" y="41.9735" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="41.2115" y="41.9735" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="42.4815" y="41.529" size="0.9144" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="47u" x="29.591" y="32.639" smashed="yes" rot="MR270">
+<element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="47u" x="29.591" y="32.639" rot="MR270">
 <attribute name="MF" value="AVX" x="29.591" y="32.639" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="29.591" y="32.639" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="29.591" y="32.639" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="31.0515" y="33.655" size="0.9144" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="C9" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="100n" x="41.2115" y="43.1165" smashed="yes">
+<element name="C9" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="100n" x="41.2115" y="43.1165">
 <attribute name="MF" value="AVX" x="41.2115" y="43.1165" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="41.2115" y="43.1165" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="41.2115" y="43.1165" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="42.545" y="42.7355" size="0.9144" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="IC1" library="TP4056" package="SOP-8" value="TP4056" x="43.688" y="27.3685" smashed="yes">
+<element name="IC1" library="TP4056" package="SOP-8" value="TP4056" x="43.688" y="27.3685">
 <attribute name="MF" value="" x="43.688" y="27.3685" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="43.688" y="27.3685" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="42.926" y="26.9875" size="0.9144" layer="25" font="vector" ratio="15"/>
 <attribute name="OC_FARNELL" value="unknown" x="43.688" y="27.3685" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="33.5915" y="42.291" smashed="yes" rot="R270">
+<element name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="33.5915" y="42.291" rot="R270">
 <attribute name="MF" value="" x="33.5915" y="42.291" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="33.5915" y="42.291" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="33.5915" y="42.291" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PROD_ID" value=" " x="33.5915" y="42.291" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value=" " x="32.5755" y="43.8785" size="0.9144" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="100K" x="46.609" y="32.4485" smashed="yes" rot="R180">
+<element name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="100K" x="46.609" y="32.4485" rot="R180">
 <attribute name="MF" value="VISHAY" x="46.609" y="32.4485" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="CRCW0805100KFKEA" x="46.609" y="32.4485" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1469860" x="46.609" y="32.4485" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value=" " x="46.609" y="32.4485" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value=" " x="43.815" y="34.9885" size="0.9144" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="100K" x="46.609" y="35.3695" smashed="yes" rot="R180">
+<element name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="100K" x="46.609" y="35.3695" rot="R180">
 <attribute name="MF" value="VISHAY" x="46.609" y="35.3695" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="CRCW0805100KFKEA" x="46.609" y="35.3695" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1469860" x="46.609" y="35.3695" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value=" " x="46.609" y="35.3695" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value=" " x="48.133" y="36.8935" size="0.9144" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="470K" x="46.609" y="33.909" smashed="yes" rot="R180">
+<element name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="470K" x="46.609" y="33.909" rot="R180">
 <attribute name="MF" value="MULTICOMP" x="46.609" y="33.909" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MC01W08051330K" x="46.609" y="33.909" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2129316" x="46.609" y="33.909" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value=" " x="46.609" y="33.909" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value=" " x="48.133" y="34.3535" size="0.9144" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7K" x="28.6385" y="26.2255" smashed="yes" rot="R90">
 <attribute name="MF" value="YAGEO" x="28.6385" y="26.2255" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1975,33 +1966,29 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value=" " x="30.6705" y="26.2255" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value=" " x="31.9405" y="24.5745" size="0.9144" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="48.895" y="28.702" smashed="yes">
+<element name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="48.895" y="28.702">
 <attribute name="MF" value="" x="48.895" y="28.702" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="48.895" y="28.702" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="48.895" y="28.702" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value=" " x="48.895" y="28.702" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value=" " x="51.2445" y="27.559" size="0.9144" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="48.895" y="27.178" smashed="yes">
+<element name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10K" x="48.895" y="27.178">
 <attribute name="MF" value="" x="48.895" y="27.178" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="48.895" y="27.178" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="48.895" y="27.178" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value=" " x="48.895" y="27.178" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value=" " x="51.2445" y="26.289" size="0.9144" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="2K" x="42.545" y="30.4165" smashed="yes">
+<element name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="2K" x="42.545" y="30.4165">
 <attribute name="MF" value="BOURNS" x="42.545" y="30.4165" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CR0805-JW-222ELF" x="42.545" y="30.4165" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2336287" x="42.545" y="30.4165" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value=" " x="42.545" y="30.4165" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value=" " x="41.021" y="29.591" size="0.9144" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="470K" x="46.609" y="30.988" smashed="yes" rot="R180">
+<element name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="470K" x="46.609" y="30.988" rot="R180">
 <attribute name="MF" value="MULTICOMP" x="46.609" y="30.988" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MC01W08051330K" x="46.609" y="30.988" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2129316" x="46.609" y="30.988" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value=" " x="46.609" y="30.988" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value=" " x="43.815" y="32.5755" size="0.9144" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="U1" library="SparkFun-IC-Microcontroller" package="TQFP32-08" value="ATMEGA328P_TQFP" x="39.37" y="36.322" smashed="yes" rot="R90">
 <attribute name="MF" value="MICROCHIP" x="39.37" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2009,55 +1996,40 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1715486" x="39.37" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PROD_ID" value="IC-09069" x="39.37" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U2" library="SparkFun-IC-Power" package="SOT23-5" value="3.3V/150mA" x="52.7685" y="26.6065" smashed="yes" rot="R270">
+<element name="U2" library="SparkFun-IC-Power" package="SOT23-5" value="3.3V/150mA" x="52.7685" y="26.6065" rot="R270">
 <attribute name="PROD_ID" value="VREG-00822" x="52.7685" y="26.6065" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C6" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="100n" x="38.2905" y="30.2895" smashed="yes" rot="R180">
+<element name="C6" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_L" package3d_urn="urn:adsk.eagle:package:2593727/1" value="100n" x="38.2905" y="30.2895" rot="R180">
 <attribute name="MF" value="AVX" x="38.2905" y="30.2895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="08056D106KAT2A" x="38.2905" y="30.2895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1301818" x="38.2905" y="30.2895" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="36.6395" y="30.6705" size="0.9144" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="J_BATT" library="con-jst-ph" package="B2B-PH-K" value="" x="49.8475" y="23.622" smashed="yes" rot="MR0">
-<attribute name="LABEL" value="" x="52.7685" y="19.177" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="NAME" x="52.705" y="26.67" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="VALUE" x="51.7525" y="21.717" size="1.016" layer="28" ratio="10" rot="MR0"/>
+<element name="J_BATT" library="con-jst-ph" package="B2B-PH-K" value="" x="49.8475" y="23.622" rot="MR0">
+<attribute name="LABEL" value="" x="52.7685" y="19.177" size="1.016" layer="26" ratio="18" rot="MR0" display="off"/>
 </element>
-<element name="J_SOLAR" library="con-jst-ph" package="B2B-PH-K" value="" x="42.291" y="23.622" smashed="yes" rot="MR0">
-<attribute name="LABEL" value="" x="45.212" y="19.177" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="NAME" x="45.085" y="26.67" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="VALUE" x="44.196" y="21.717" size="1.016" layer="28" ratio="10" rot="MR0"/>
-</element>
-<element name="SENSOR" library="con-jst-ph" package="B4B-PH-K" value="B4B-PH-K" x="31.6865" y="23.6855" smashed="yes" rot="MR0">
-<attribute name="LABEL" value="" x="36.6395" y="19.2405" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="NAME" x="36.576" y="26.162" size="1.016" layer="26" ratio="18" rot="MR0"/>
-<attribute name="VALUE" x="35.4965" y="21.717" size="1.016" layer="28" ratio="10" rot="MR0"/>
+<element name="J_SOLAR" library="con-jst-ph" package="B2B-PH-K" value="" x="42.291" y="23.622" rot="MR0">
+<attribute name="LABEL" value="" x="45.212" y="19.177" size="1.016" layer="26" ratio="18" rot="MR0" display="off"/>
 </element>
 <element name="U$1" library="ebyte" package="ML01S" value="ML01SSMD-SOM" x="30.1625" y="33.7185" smashed="yes" rot="MR180"/>
 <element name="U$2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="26.4795" y="37.465" smashed="yes" rot="R270">
 <attribute name="VALUE" x="22.0345" y="42.545" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="" x="22.1615" y="31.115" smashed="yes" rot="MR90">
-<attribute name="NAME" x="20.939" y="29.234" size="0.762" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="20.1615" y="29.615" size="1.27" layer="28" rot="MR90"/>
-</element>
-<element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="" x="22.1615" y="38.354" smashed="yes" rot="MR90">
-<attribute name="NAME" x="20.939" y="36.1555" size="0.762" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="20.1615" y="36.854" size="1.27" layer="28" rot="MR90"/>
-</element>
-<element name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1K" x="22.1615" y="27.8765" smashed="yes" rot="MR270">
+<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="" x="22.1615" y="31.115" rot="MR90"/>
+<element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="" x="22.1615" y="38.354" rot="MR90"/>
+<element name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1K" x="22.1615" y="27.8765" rot="MR270">
 <attribute name="MF" value="" x="22.1615" y="27.8765" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="" x="22.1615" y="27.8765" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.1615" y="27.8765" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="PROD_ID" value=" " x="22.1615" y="27.8765" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" value=" " x="22.86" y="26.0985" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1K" x="22.1615" y="35.1155" smashed="yes" rot="MR270">
+<element name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1K" x="22.1615" y="35.1155" rot="MR270">
 <attribute name="MF" value="" x="22.1615" y="35.1155" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="" x="22.1615" y="35.1155" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.1615" y="35.1155" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="PROD_ID" value=" " x="22.1615" y="35.1155" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" value=" " x="24.0665" y="35.7505" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="SENSOR1" library="con-jst-ph" package="B4B-PH-K" value="B4B-PH-K" x="31.75" y="23.8125" rot="MR180">
+<attribute name="LABEL" value="" x="31.75" y="23.8125" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2080,7 +2052,6 @@ design rules under a new name.</description>
 <contactref element="C5" pad="2"/>
 <contactref element="U2" pad="2"/>
 <contactref element="C6" pad="2"/>
-<contactref element="SENSOR" pad="2"/>
 <contactref element="J_SOLAR" pad="1"/>
 <contactref element="J_BATT" pad="1"/>
 <contactref element="U$1" pad="GND"/>
@@ -2152,6 +2123,7 @@ design rules under a new name.</description>
 <vertex x="57.15" y="45.72"/>
 </polygon>
 <wire x1="47.459" y1="35.3695" x2="46.7995" y2="35.3695" width="0.1524" layer="1"/>
+<contactref element="SENSOR1" pad="3"/>
 </signal>
 <signal name="VCC">
 <contactref element="R1" pad="1"/>
@@ -2169,7 +2141,6 @@ design rules under a new name.</description>
 <contactref element="C5" pad="1"/>
 <contactref element="C6" pad="1"/>
 <contactref element="U2" pad="5"/>
-<contactref element="SENSOR" pad="1"/>
 <contactref element="U$1" pad="VCC"/>
 <contactref element="U$2" pad="7"/>
 <polygon width="0.1524" layer="16" isolate="0.1524">
@@ -2234,6 +2205,7 @@ design rules under a new name.</description>
 <wire x1="54.0686" y1="27.5565" x2="54.0686" y2="28.4146" width="0.1524" layer="1"/>
 <wire x1="54.0686" y1="28.4146" x2="54.102" y2="28.448" width="0.1524" layer="1"/>
 <via x="54.102" y="28.448" extent="1-16" drill="0.35"/>
+<contactref element="SENSOR1" pad="4"/>
 </signal>
 <signal name="RST">
 <contactref element="R1" pad="2"/>
@@ -2310,10 +2282,7 @@ design rules under a new name.</description>
 <signal name="SCL/A5">
 <contactref element="U1" pad="28"/>
 <contactref element="R14" pad="1"/>
-<contactref element="SENSOR" pad="4"/>
-<wire x1="28.6512" y1="23.7744" x2="28.6512" y2="25.2984" width="0.1524" layer="1"/>
 <wire x1="28.6512" y1="25.2984" x2="28.6385" y2="25.3755" width="0.1524" layer="1"/>
-<wire x1="28.6512" y1="23.7744" x2="28.6865" y2="23.6855" width="0.1524" layer="1"/>
 <wire x1="35.6616" y1="36.576" x2="35.2044" y2="36.576" width="0.1524" layer="1"/>
 <wire x1="35.9664" y1="36.2712" x2="35.6616" y2="36.576" width="0.1524" layer="1"/>
 <wire x1="35.9664" y1="31.6738" x2="35.9664" y2="36.2712" width="0.1524" layer="1"/>
@@ -2324,14 +2293,14 @@ design rules under a new name.</description>
 <wire x1="28.6512" y1="25.4508" x2="29.4132" y2="26.2128" width="0.1524" layer="1"/>
 <wire x1="35.2044" y1="36.576" x2="35.0774" y2="36.722" width="0.1524" layer="1"/>
 <wire x1="28.6512" y1="25.4508" x2="28.6385" y2="25.3755" width="0.1524" layer="1"/>
+<contactref element="SENSOR1" pad="1"/>
+<wire x1="28.6385" y1="25.3755" x2="28.6385" y2="23.924" width="0.1524" layer="1"/>
+<wire x1="28.6385" y1="23.924" x2="28.75" y2="23.8125" width="0.1524" layer="1"/>
 </signal>
 <signal name="SDA/A4">
 <contactref element="U1" pad="27"/>
 <contactref element="R15" pad="1"/>
-<contactref element="SENSOR" pad="3"/>
-<wire x1="30.6324" y1="23.7744" x2="30.6324" y2="25.2984" width="0.1524" layer="1"/>
 <wire x1="30.6324" y1="25.2984" x2="30.6705" y2="25.3755" width="0.1524" layer="1"/>
-<wire x1="30.6324" y1="23.7744" x2="30.6865" y2="23.6855" width="0.1524" layer="1"/>
 <via x="36.8935" y="33.655" extent="1-16" drill="0.35"/>
 <wire x1="35.0774" y1="37.522" x2="35.3694" y2="37.23" width="0.1524" layer="1"/>
 <wire x1="35.3694" y1="37.23" x2="35.8070875" y2="37.23" width="0.1524" layer="1"/>
@@ -2349,6 +2318,9 @@ design rules under a new name.</description>
 <wire x1="37.3699875" y1="28.9207" x2="36.38815" y2="28.9207" width="0.1524" layer="16"/>
 <wire x1="35.7505" y1="29.0195" x2="32.1065" y2="25.3755" width="0.1524" layer="1"/>
 <wire x1="32.1065" y1="25.3755" x2="30.6705" y2="25.3755" width="0.1524" layer="1"/>
+<contactref element="SENSOR1" pad="2"/>
+<wire x1="30.6705" y1="25.3755" x2="30.6705" y2="23.892" width="0.1524" layer="1"/>
+<wire x1="30.6705" y1="23.892" x2="30.75" y2="23.8125" width="0.1524" layer="1"/>
 </signal>
 <signal name="A3">
 <contactref element="U1" pad="26"/>

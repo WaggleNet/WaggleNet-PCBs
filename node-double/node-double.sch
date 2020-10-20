@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -7645,7 +7645,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </part>
 <part name="J_BATT" library="con-jst-ph" deviceset="B2B-PH-K" device="" value=""/>
 <part name="J_SOLAR" library="con-jst-ph" deviceset="B2B-PH-K" device="" value=""/>
-<part name="SENSOR" library="con-jst-ph" deviceset="B4B-PH-K" device=""/>
 <part name="U$1" library="ebyte" deviceset="ML01S" device="SMD-SOM"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -7663,6 +7662,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SENSOR1" library="con-jst-ph" deviceset="B4B-PH-K" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7796,7 +7796,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </instance>
 <instance part="J_BATT" gate="G$1" x="223.52" y="58.42"/>
 <instance part="J_SOLAR" gate="G$1" x="200.66" y="58.42"/>
-<instance part="SENSOR" gate="G$1" x="30.48" y="0"/>
 <instance part="U$1" gate="G$1" x="226.06" y="-20.32"/>
 <instance part="SUPPLY7" gate="G$1" x="210.82" y="-35.56"/>
 <instance part="GND10" gate="1" x="195.58" y="-48.26"/>
@@ -7814,6 +7813,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="MPN" x="104.14" y="48.26" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND12" gate="1" x="111.76" y="43.18"/>
+<instance part="SENSOR1" gate="G$1" x="17.78" y="2.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7903,9 +7903,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <junction x="185.42" y="22.86"/>
 </segment>
 <segment>
-<pinref part="SENSOR" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
 <label x="22.86" y="2.54" size="1.778" layer="95" rot="R180"/>
+<pinref part="SENSOR1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="J_SOLAR" gate="G$1" pin="1"/>
@@ -8004,9 +8004,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <junction x="185.42" y="40.64"/>
 </segment>
 <segment>
-<pinref part="SENSOR" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <label x="22.86" y="5.08" size="1.778" layer="95" rot="R180"/>
+<pinref part="SENSOR1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -8032,6 +8032,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <segment>
 <pinref part="U$2" gate="A" pin="4"/>
 <label x="101.6" y="-5.08" size="1.778" layer="95"/>
+<junction x="96.52" y="-5.08"/>
 </segment>
 </net>
 <net name="RX-1" class="0">
@@ -8098,9 +8099,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <label x="147.32" y="-43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SENSOR" gate="G$1" pin="4"/>
 <wire x1="22.86" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
 <label x="22.86" y="-2.54" size="1.778" layer="95" rot="R180"/>
+<pinref part="SENSOR1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SDA/A4" class="0">
@@ -8115,9 +8116,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <label x="147.32" y="-50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SENSOR" gate="G$1" pin="3"/>
 <wire x1="22.86" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
 <label x="22.86" y="0" size="1.778" layer="95" rot="R180"/>
+<pinref part="SENSOR1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="A3" class="0">
